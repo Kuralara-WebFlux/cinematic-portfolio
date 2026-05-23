@@ -1,6 +1,14 @@
 "use client";
 
-import { Volume2, VolumeX, Play, Pause, Github, Linkedin, Twitter } from "lucide-react";
+import {
+  Volume2,
+  VolumeX,
+  Play,
+  Pause,
+  Code,
+  Briefcase,
+  Globe,
+} from "lucide-react";
 
 interface ControlsProps {
   isMuted: boolean;
@@ -27,13 +35,13 @@ export default function Controls({ isMuted, isPlaying, toggleMute, togglePlay }:
       {/* Socials */}
       <div className="flex gap-4">
         <a href="#" className={glassClass} aria-label="GitHub">
-          <Github size={20} className="text-white" />
+          <Code size={20} className="text-white" />
         </a>
         <a href="#" className={glassClass} aria-label="LinkedIn">
-          <Linkedin size={20} className="text-white" />
+          <Briefcase size={20} className="text-white" />
         </a>
-        <a href="#" className={glassClass} aria-label="Twitter">
-          <Twitter size={20} className="text-white" />
+        <a href="#" className={glassClass} aria-label="Website">
+          <Globe size={20} className="text-white" />
         </a>
       </div>
     </div>
